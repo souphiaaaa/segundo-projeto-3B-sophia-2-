@@ -37,10 +37,15 @@ let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta () {
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
+    }
     perguntaAtual = perguntas [atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado
+    mostraAlternativa();
 }
-mostraPergunta();
+
 
 function mostraAlternativa(){
 for (const alternativa of perguntaAtual.alternativas) {
@@ -51,4 +56,11 @@ atual++;
 mostraPergunta();
 })
 }
+}
+
+function respostaSelecionada (opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+historiaFinal = afirmacoes;
+atual++;
+mostraPergunta();
 }
