@@ -13,25 +13,46 @@ temBorrachaAtras: false
 const perguntas = [
 {
 enunciado: "Qual é o objetivo principal dos sobreviventes durante uma partida?",
-Alternativas: [
-"Concertar geradores e escapar",
-"Encontrar 5 totens"
-] ,
+alternativas: [
+{
+texto: "Concertar geradores e escapar",
+afirmacao: "afirmacao"
+},
+{
+texto: "Encontrar 5 totens",
+afirmacao: "afirmacao"
+}
+]
 },
 {
 enunciado: "O que são Perks?",
-Alternativas: [
-"Modificadores exclusivos do mapa",
-"Habilidades equipaveis que concedem efeitos especiais"
-],
+alternativas: [
+{
+texto: "Modificadores exclusivos do mapa",
+afirmacao: "afirmacao"
+},
+{
+texto: "Habilidades equipaveis que concedem efeitos especiais",
+afirmacao: "afirmacao"
+}
+
+]
+
 },
 {
 enunciado: "Qual destes killers possui uma habilidade que permite se teleportar através de uma rede de portais??",
-Alternativas: [
-"Nurse",
-"Demogorgon"
-],
+alternativas: [
+{
+texto: "Nurse",
+afirmacao: "afirmacao"
 },
+{
+texto: "Demogorgon",
+afirmacao: "afirmacao"
+}
+
+]
+}
 ];
 let atual = 0;
 let perguntaAtual;
@@ -64,3 +85,11 @@ historiaFinal = afirmacoes;
 atual++;
 mostraPergunta();
 }
+
+function mostraResultado(){
+caixaPerguntas.textContent = "Em 2049...";
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent = "";
+}
+
+mostraPergunta();
