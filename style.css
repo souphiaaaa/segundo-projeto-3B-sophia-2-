@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap');
 :root{
 --cor-fundo:var(purple);
 --cor-principal:var(rgb(188, 166, 247));
@@ -6,6 +7,7 @@
 --cor-texto:var(black);
 }
 body{
+font-family: 'Inter', sans-serif;
 background-color: var(--cor-fundo);
 color: var(--cor-texto);
 display: flex;
@@ -36,4 +38,22 @@ button {
 button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+}
+
+.caixa-resultado {
+    display: none;
+}
+
+.caixa-resultado.mostrar {
+    display: block;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1, .caixa-perguntas, .caixa-resultado {
+    font-family: 'Chakra Petch', sans-serif;
 }
