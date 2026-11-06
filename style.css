@@ -44,16 +44,28 @@ button:hover{
     display: none;
 }
 
+.caixa-resultado {
+    display: none;
+}
+
 .caixa-resultado.mostrar {
     display: block;
 }
 
+.caixa-perguntas,
 .caixa-alternativas {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: none;
 }
 
-h1, .caixa-perguntas, .caixa-resultado {
-    font-family: 'Chakra Petch', sans-serif;
+.caixa-perguntas.mostrar {
+    display: block;
+}
+
+.caixa-alternativas.mostrar {
+    display: flex;
+}
+
+.caixa-alternativas {
+    flex-direction: column;
+    gap: 10px;
 }
