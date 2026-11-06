@@ -1,20 +1,21 @@
+
 export const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas de uma pessoa, além de gerar imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você acorda em uma floresta escura. Ao longe, escuta o barulho de um gerador. O que você faz?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "Vou até o gerador para tentar encontrar uma saída.",
                 afirmacao: [
-                    "No início, ficou com medo do que essa tecnologia poderia fazer.",
-                    "Achou assustador pensar na velocidade com que a tecnologia está avançando."
+                    "Você decidiu procurar uma maneira de escapar da floresta.",
+                    "Mesmo com medo, você acreditou que o gerador poderia ser sua esperança."
                 ],
                 proxima: 1
             },
             {
-                texto: "Isso é maravilhoso!",
+                texto: "Prefiro me esconder e observar o ambiente.",
                 afirmacao: [
-                    "Ficou impressionado com as possibilidades da Inteligência Artificial.",
-                    "Acreditou que a tecnologia poderia facilitar muitas atividades."
+                    "Você escolheu agir com cautela, evitando chamar atenção.",
+                    "Sua estratégia foi esperar o momento certo para se movimentar."
                 ],
                 proxima: 1
             }
@@ -22,21 +23,21 @@ export const perguntas = [
     },
 
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora decidiu fazer uma sequência de aulas sobre ela. No fim de uma aula, ela pede que você escreva um trabalho sobre o uso da tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Enquanto procura uma saída, você encontra outros sobreviventes. Eles precisam de ajuda para consertar um gerador. Qual é sua decisão?",
         alternativas: [
             {
-                texto: "Utilizar uma ferramenta de busca com IA para encontrar informações relevantes e facilitar o entendimento.",
+                texto: "Ajudar o grupo a consertar o gerador.",
                 afirmacao: [
-                    "Utilizou a IA como ferramenta de pesquisa, buscando compreender melhor o assunto.",
-                    "Percebeu que a Inteligência Artificial poderia auxiliar nos estudos."
+                    "Você trabalhou em equipe e ajudou os sobreviventes a avançar.",
+                    "Sua cooperação aumentou as chances de todos encontrarem uma saída."
                 ],
                 proxima: 2
             },
             {
-                texto: "Escrever o trabalho com base nas conversas com colegas, pesquisas na internet e conhecimentos próprios.",
+                texto: "Continuar explorando a floresta sozinho.",
                 afirmacao: [
-                    "Preferiu utilizar seus próprios conhecimentos e pesquisas para desenvolver o trabalho.",
-                    "Valorizou a pesquisa tradicional e a troca de conhecimentos."
+                    "Você preferiu seguir seu próprio caminho.",
+                    "Sua independência fez você buscar uma rota alternativa."
                 ],
                 proxima: 2
             }
@@ -44,21 +45,21 @@ export const perguntas = [
     },
 
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate sobre como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Um barulho misterioso surge perto de vocês. O grupo acredita que o perigo está próximo. O que você faz?",
         alternativas: [
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a proteção dos trabalhadores.",
+                texto: "Avisar os outros e procurar um esconderijo.",
                 afirmacao: [
-                    "Demonstrou preocupação com os trabalhadores que poderiam ser substituídos pela tecnologia.",
-                    "Defendeu a importância de proteger os empregos diante do avanço da IA."
+                    "Você alertou o grupo e procurou um lugar seguro.",
+                    "Sua atenção ajudou os sobreviventes a se prepararem."
                 ],
                 proxima: 3
             },
             {
-                texto: "Defendo a ideia de que a IA pode criar novas oportunidades de emprego e melhorar as habilidades humanas.",
+                texto: "Continuar consertando o gerador rapidamente.",
                 afirmacao: [
-                    "Acreditou que a IA poderia gerar novas oportunidades profissionais.",
-                    "Enxergou a tecnologia como uma oportunidade de desenvolvimento."
+                    "Você decidiu manter o foco na missão.",
+                    "Sua determinação fez com que o grupo continuasse tentando escapar."
                 ],
                 proxima: 3
             }
@@ -66,21 +67,21 @@ export const perguntas = [
     },
 
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Finalmente, o gerador está funcionando. Uma porta de saída se abre, mas você percebe que um sobrevivente ficou para trás. O que você faz?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Voltar para ajudar o sobrevivente.",
                 afirmacao: [
-                    "Preferiu criar a imagem manualmente, utilizando suas próprias habilidades.",
-                    "Valorizou a criatividade humana na produção artística."
+                    "Você decidiu não abandonar seu companheiro.",
+                    "Sua coragem e solidariedade marcaram sua jornada."
                 ],
                 proxima: 4
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagens de IA.",
+                texto: "Correr para a saída antes que ela se feche.",
                 afirmacao: [
-                    "Utilizou a Inteligência Artificial como ferramenta de criação.",
-                    "Explorou as possibilidades artísticas oferecidas pela tecnologia."
+                    "Você escolheu priorizar sua própria fuga.",
+                    "Sua decisão permitiu que você se aproximasse da liberdade."
                 ],
                 proxima: 4
             }
@@ -88,20 +89,20 @@ export const perguntas = [
     },
 
     {
-        enunciado: "Você tem um trabalho em grupo de Biologia para entregar na semana seguinte. Uma pessoa do grupo decidiu fazê-lo com ajuda de uma IA, mas o trabalho ficou totalmente igual ao texto do chat. O que você faz?",
+        enunciado: "Você chega à saída da floresta. A névoa começa a desaparecer, mas uma última decisão precisa ser tomada. Qual é sua escolha?",
         alternativas: [
             {
-                texto: "Revisar o trabalho, pois toda máquina pode errar, e contribuir com perspectivas pessoais.",
+                texto: "Atravessar a porta e escapar.",
                 afirmacao: [
-                    "Defendeu a revisão das informações e a contribuição pessoal no trabalho.",
-                    "Compreendeu que a IA deve ser utilizada com responsabilidade."
+                    "Você conseguiu escapar da floresta e sobreviveu à noite.",
+                    "A liberdade finalmente chegou, mas as lembranças da névoa permanecerão."
                 ]
             },
             {
-                texto: "Acreditar que escrever comandos para o chat já é uma contribuição suficiente.",
+                texto: "Olhar para trás e tentar descobrir o mistério da floresta.",
                 afirmacao: [
-                    "Considerou a utilização da IA uma maneira prática de realizar o trabalho.",
-                    "Percebeu que a tecnologia poderia agilizar a produção do conteúdo."
+                    "Você decidiu enfrentar o mistério que envolvia aquele lugar.",
+                    "Sua curiosidade fez você descobrir que a floresta escondia muitos segredos."
                 ]
             }
         ]

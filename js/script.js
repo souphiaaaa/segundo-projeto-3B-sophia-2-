@@ -1,3 +1,4 @@
+
 import { perguntas } from './perguntas.js';
 import { aleatorio, nome } from './aleatorio.js';
 
@@ -49,24 +50,20 @@ function mostraAlternativas() {
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+    const afirmacao = aleatorio(opcaoSelecionada.afirmacao);
 
-    historiaFinal += afirmacoes + " ";
-
-    atual++;
+    historiaFinal += afirmacao + " ";
 
     if (opcaoSelecionada.proxima !== undefined) {
         atual = opcaoSelecionada.proxima;
+        mostraPergunta();
     } else {
         mostraResultado();
-        return;
     }
-
-    mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = `Em 2049, ${nome}...`;
+    caixaPerguntas.textContent = `A jornada de ${nome} chegou ao fim...`;
 
     textoResultado.textContent = historiaFinal;
 
@@ -100,14 +97,6 @@ function iniciaJogo() {
     mostraPergunta();
 }
 
-function substituiNome() {
-    for (const pergunta of perguntas) {
-        pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
-    }
-}
-
 botaoIniciar.addEventListener("click", iniciaJogo);
 
 botaoJogarNovamente.addEventListener("click", jogaNovamente);
-
-substituiNome();

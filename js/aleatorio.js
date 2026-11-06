@@ -1,11 +1,13 @@
+
 const nomes = [
     "Ana",
     "Fernanda",
-    "Maria Eduarda",
-    "Marcelo",
+    "Maria",
+    "Lucas",
+    "Gabriel",
     "Amanda",
     "Gustavo",
-    "Gabriel"
+    "Mariana"
 ];
 
 export function aleatorio(lista) {

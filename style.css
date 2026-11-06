@@ -1,47 +1,84 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap');
-:root{
---cor-fundo:var(purple);
---cor-principal:var(rgb(188, 166, 247));
---cor-secundaria:var(white);
---cor-destaque:var(rgb(243, 148, 243));
---cor-texto:var(black);
+
+:root {
+    --cor-fundo: #0b0b0b;
+    --cor-principal: #242424;
+    --cor-secundaria: #eeeeee;
+    --cor-destaque: #b30000;
+    --cor-texto: #ffffff;
 }
-body{
-font-family: 'Inter', sans-serif;
-background-color: var(--cor-fundo);
-color: var(--cor-texto);
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
 }
-.caixa-principal{
-background-color: var(--cor-principal);
-width: 90%;
-max-width: 600px;
-text-align: center;
-padding: 20px;
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+
+    width: 90%;
+    max-width: 600px;
+
+    text-align: center;
+    padding: 25px;
+
+    border: 2px solid var(--cor-destaque);
+    border-radius: 10px;
 }
-h1{
-color: var(--cor-destaque);
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-destaque);
+}
+
+p {
+    line-height: 1.6;
 }
 
 button {
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+    color: #000000;
+
     border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: backgound-color 0.3s;
+    border-radius: 8px;
+
+    padding: 12px 18px;
+    margin: 5px;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: var(--cor-texto);
 }
 
-.caixa-resultado {
+.caixa-perguntas,
+.caixa-alternativas {
     display: none;
+}
+
+.caixa-perguntas.mostrar {
+    display: block;
+    margin: 20px 0;
+}
+
+.caixa-alternativas.mostrar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .caixa-resultado {
@@ -52,20 +89,6 @@ button:hover{
     display: block;
 }
 
-.caixa-perguntas,
-.caixa-alternativas {
-    display: none;
-}
-
-.caixa-perguntas.mostrar {
-    display: block;
-}
-
-.caixa-alternativas.mostrar {
-    display: flex;
-}
-
-.caixa-alternativas {
-    flex-direction: column;
-    gap: 10px;
+.caixa-alternativas button {
+    width: 100%;
 }
